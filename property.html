@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Property Details — LuxEstate</title>
+    <meta name="description" content="View premium property details, galleries, amenities, floor plans, location, and inquiry options." />
+    <meta name="theme-color" content="#111827" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header solid" data-header>
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="LuxEstate home">
+          <span class="brand-mark" aria-hidden="true">LE</span>
+          <span>LuxEstate</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" data-nav-toggle>
+          <span class="sr-only">Open menu</span>
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="primary-menu" data-nav-menu>
+          <li><a href="index.html#properties">Properties</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a class="nav-cta" href="index.html#contact">Book Consultation</a>
+      </nav>
+    </header>
+
+    <main id="main" class="detail-main">
+      <section class="detail-hero section" data-property-detail>
+        <div class="container">
+          <a class="back-link" href="index.html#properties">← Back to properties</a>
+          <div class="detail-title-wrap reveal">
+            <div>
+              <span class="eyebrow" data-detail-availability>Premium Listing</span>
+              <h1 data-detail-title>Property Details</h1>
+              <p data-detail-location></p>
+            </div>
+            <div class="detail-price" data-detail-price></div>
+          </div>
+          <div class="detail-gallery reveal" data-detail-gallery aria-label="Property image gallery"></div>
+        </div>
+      </section>
+
+      <section class="section detail-content-section">
+        <div class="container detail-layout">
+          <article class="detail-content reveal">
+            <div class="detail-stats" data-detail-stats></div>
+
+            <h2>Property Overview</h2>
+            <p data-detail-description></p>
+
+            <h2>Amenities</h2>
+            <ul class="amenity-grid" data-detail-amenities></ul>
+
+            <h2>Floor Plan</h2>
+            <div class="floor-plan" data-detail-floor-plan></div>
+
+            <h2>Location</h2>
+            <div class="map-shell detail-map" data-detail-map></div>
+          </article>
+
+          <aside class="inquiry-card glass reveal" aria-label="Property inquiry form">
+            <h2>Request a private viewing</h2>
+            <p>Send your details and a senior property advisor will contact you with next steps.</p>
+            <form data-contact-form>
+              <label>
+                Full Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Phone
+                <input type="tel" name="phone" placeholder="Phone number" />
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="5" required></textarea>
+              </label>
+              <button class="btn btn-primary btn-full" type="submit">Send Inquiry</button>
+              <p class="form-note" data-form-note role="status" aria-live="polite"></p>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" data-lightbox hidden>
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close gallery">×</button>
+      <img src="" alt="Expanded property view" data-lightbox-image />
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-bottom">
+        <small>© <span data-year></span> LuxEstate. All rights reserved.</small>
+        <small><a href="index.html#contact">Contact advisory team</a></small>
+      </div>
+    </footer>
+
+    <script src="data/properties.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>
