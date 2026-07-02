@@ -1,0 +1,22 @@
+{
+  "name": "luxestate-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LuxEstate premium real estate website prepared as an installable PWA and Capacitor mobile application.",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "build": "node scripts/build-static.mjs",
+    "preview": "python -m http.server 8080 -d www",
+    "cap:init": "npx cap init LuxEstate com.luxestate.app --web-dir www",
+    "cap:add:android": "npx cap add android",
+    "cap:sync": "npm run build && npx cap sync",
+    "cap:open:android": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "latest",
+    "@capacitor/core": "latest"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "latest"
+  }
+}

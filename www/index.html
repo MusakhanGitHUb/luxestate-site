@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LuxEstate — Premium Real Estate & Property Advisory</title>
+    <meta name="description" content="Discover premium homes, investment properties, rentals, and professional real estate advisory with LuxEstate." />
+    <meta name="keywords" content="real estate, luxury properties, homes for sale, property investment, rentals, property management" />
+    <meta name="theme-color" content="#111827" />
+<meta name="application-name" content="LuxEstate" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="LuxEstate" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <meta property="og:title" content="LuxEstate — Premium Real Estate & Property Advisory" />
+    <meta property="og:description" content="A modern real estate platform for serious buyers, sellers, tenants, and investors." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=75" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "LuxEstate",
+        "description": "Premium property sales, rentals, investment consulting, and property management.",
+        "url": "https://example.com",
+        "telephone": "+1-555-0142",
+        "email": "hello@luxestate.example",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "88 Meridian Avenue",
+          "addressLocality": "New York",
+          "addressRegion": "NY",
+          "postalCode": "10001",
+          "addressCountry": "US"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="LuxEstate home">
+          <span class="brand-mark" aria-hidden="true">LE</span>
+          <span>LuxEstate</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" data-nav-toggle>
+          <span class="sr-only">Open menu</span>
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-menu" id="primary-menu" data-nav-menu>
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a class="nav-cta" href="#contact">Book Consultation</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=75"
+            alt=""
+            width="1800"
+            height="1200"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Premium Property Advisory</span>
+            <h1 id="hero-title">Find exceptional homes with confidence and clarity.</h1>
+            <p>
+              Curated luxury listings, market-backed guidance, and a seamless buying, selling, and renting experience built for serious property decisions.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#properties">Explore Properties</a>
+              <a class="btn btn-secondary" href="#contact">Speak to an Advisor</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel glass reveal" aria-label="Quick property search">
+            <form class="quick-search" data-quick-search>
+              <label>
+                Location
+                <input type="search" name="location" placeholder="City, district, community" autocomplete="off" />
+              </label>
+              <label>
+                Property Type
+                <select name="type">
+                  <option value="">Any type</option>
+                  <option value="Villa">Villa</option>
+                  <option value="Penthouse">Penthouse</option>
+                  <option value="Apartment">Apartment</option>
+                  <option value="Townhouse">Townhouse</option>
+                </select>
+              </label>
+              <label>
+                Budget
+                <select name="budget">
+                  <option value="">Any budget</option>
+                  <option value="900000">Up to $900k</option>
+                  <option value="1500000">Up to $1.5M</option>
+                  <option value="3000000">Up to $3M</option>
+                  <option value="5000000">Up to $5M</option>
+                </select>
+              </label>
+              <button class="btn btn-primary btn-full" type="submit">Search Now</button>
+            </form>
+          </aside>
+        </div>
+
+        <div class="container hero-stats reveal" aria-label="Company statistics">
+          <div><strong>15+</strong><span>Years experience</span></div>
+          <div><strong>$840M</strong><span>Closed transactions</span></div>
+          <div><strong>98%</strong><span>Client satisfaction</span></div>
+          <div><strong>42</strong><span>Prime communities</span></div>
+        </div>
+      </section>
+
+      <section class="section property-search-section" id="properties" aria-labelledby="properties-title">
+        <div class="container section-heading reveal">
+          <span class="eyebrow">Featured Portfolio</span>
+          <h2 id="properties-title">Properties designed for lifestyle, return, and long-term value.</h2>
+          <p>Search our curated portfolio by price, location, type, size, bedrooms, and availability.</p>
+        </div>
+
+        <div class="container search-shell reveal">
+          <form class="advanced-search" data-filter-form aria-label="Advanced property search">
+            <label>
+              Location
+              <input type="search" name="location" placeholder="e.g. Downtown, Marina, Palm" autocomplete="off" />
+            </label>
+            <label>
+              Type
+              <select name="type">
+                <option value="">All types</option>
+                <option value="Villa">Villa</option>
+                <option value="Penthouse">Penthouse</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Townhouse">Townhouse</option>
+              </select>
+            </label>
+            <label>
+              Max Price
+              <select name="price">
+                <option value="">No max</option>
+                <option value="900000">$900k</option>
+                <option value="1500000">$1.5M</option>
+                <option value="3000000">$3M</option>
+                <option value="5000000">$5M</option>
+              </select>
+            </label>
+            <label>
+              Min Size
+              <select name="size">
+                <option value="">Any size</option>
+                <option value="900">900 sq ft</option>
+                <option value="1500">1,500 sq ft</option>
+                <option value="2500">2,500 sq ft</option>
+                <option value="4000">4,000 sq ft</option>
+              </select>
+            </label>
+            <label>
+              Bedrooms
+              <select name="bedrooms">
+                <option value="">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
+              </select>
+            </label>
+            <label>
+              Availability
+              <select name="availability">
+                <option value="">Any</option>
+                <option value="For Sale">For Sale</option>
+                <option value="For Rent">For Rent</option>
+                <option value="Investment">Investment</option>
+              </select>
+            </label>
+            <div class="search-actions">
+              <button class="btn btn-primary" type="submit">Apply Filters</button>
+              <button class="btn btn-ghost" type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="container results-meta reveal">
+          <p><span data-result-count>0</span> premium properties available</p>
+          <div class="sort-group">
+            <label for="sort">Sort by</label>
+            <select id="sort" data-sort>
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="size-desc">Largest Size</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="container property-grid" data-property-grid aria-live="polite"></div>
+        <p class="container empty-state" data-empty-state hidden>No matching properties found. Try adjusting your filters.</p>
+      </section>
+
+      <section class="section split-section" id="about" aria-labelledby="about-title">
+        <div class="container split-grid">
+          <div class="split-image reveal parallax-card">
+            <img src="https://images.unsplash.com/photo-1600566753151-384129cf4e3e?auto=format&fit=crop&w=1000&q=75" alt="Elegant modern living room with premium finishes" loading="lazy" width="1000" height="1200" />
+          </div>
+          <div class="split-copy reveal">
+            <span class="eyebrow">Trusted by discerning clients</span>
+            <h2 id="about-title">A boutique real estate team with institutional discipline.</h2>
+            <p>
+              LuxEstate combines local market intelligence, high-touch advisory, and elegant digital experiences to help clients make confident property decisions.
+            </p>
+            <div class="value-list">
+              <article>
+                <h3>Verified opportunities</h3>
+                <p>Every listing is reviewed for location quality, market value, documentation, and buyer fit.</p>
+              </article>
+              <article>
+                <h3>Transparent advisory</h3>
+                <p>Clear pricing, risk awareness, negotiation strategy, and full transaction support.</p>
+              </article>
+              <article>
+                <h3>End-to-end execution</h3>
+                <p>From discovery to closing, our advisors coordinate viewings, offers, contracts, and handover.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="container section-heading reveal">
+          <span class="eyebrow">Advisory Services</span>
+          <h2 id="services-title">A complete property growth partner.</h2>
+        </div>
+        <div class="container service-grid">
+          <article class="service-card reveal">
+            <span>01</span>
+            <h3>Buying</h3>
+            <p>Personalized property discovery, valuation guidance, negotiation, legal coordination, and closing support.</p>
+          </article>
+          <article class="service-card reveal">
+            <span>02</span>
+            <h3>Selling</h3>
+            <p>Premium positioning, pricing strategy, professional marketing, qualified lead handling, and offer management.</p>
+          </article>
+          <article class="service-card reveal">
+            <span>03</span>
+            <h3>Renting</h3>
+            <p>Tenant matching, viewing coordination, lease advisory, documentation, and move-in support.</p>
+          </article>
+          <article class="service-card reveal">
+            <span>04</span>
+            <h3>Investment Consulting</h3>
+            <p>ROI analysis, community research, portfolio strategy, rental yield projections, and exit planning.</p>
+          </article>
+          <article class="service-card reveal">
+            <span>05</span>
+            <h3>Property Management</h3>
+            <p>Leasing, maintenance coordination, inspections, reporting, and owner communication.</p>
+          </article>
+          <article class="service-card reveal">
+            <span>06</span>
+            <h3>Relocation Support</h3>
+            <p>Area orientation, school and lifestyle guidance, shortlists, and onboarding for families and executives.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section story-band" aria-labelledby="story-title">
+        <div class="container story-content reveal">
+          <h2 id="story-title">Property marketing that feels cinematic, strategic, and measurable.</h2>
+          <p>Professional visuals, thoughtful copy, targeted campaigns, and lead-focused experiences help each property stand out in a competitive market.</p>
+          <a class="btn btn-secondary" href="#contact">Start Your Property Plan</a>
+        </div>
+      </section>
+
+      <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="container section-heading reveal">
+          <span class="eyebrow">Client Success</span>
+          <h2 id="testimonials-title">Built on confidence, discretion, and results.</h2>
+        </div>
+        <div class="container testimonial-grid">
+          <figure class="testimonial-card reveal">
+            <blockquote>“The team transformed a complex purchase into a calm, data-backed decision. The shortlist was precise and the negotiation was excellent.”</blockquote>
+            <figcaption>
+              <strong>Amelia Hart</strong>
+              <span>Private Buyer</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card reveal">
+            <blockquote>“We sold above expectation because the positioning, photography, and buyer qualification process were handled beautifully.”</blockquote>
+            <figcaption>
+              <strong>Daniel Cross</strong>
+              <span>Seller</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card reveal">
+            <blockquote>“Their investment analysis helped us compare yield, appreciation, risk, and liquidity clearly before committing capital.”</blockquote>
+            <figcaption>
+              <strong>Nora Malik</strong>
+              <span>Investor</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <span class="eyebrow">Start the Conversation</span>
+            <h2 id="contact-title">Tell us what you are looking for. We will prepare a tailored shortlist.</h2>
+            <p>Share your goals, budget, preferred location, and timeline. A senior advisor will respond with a focused property plan.</p>
+            <div class="contact-methods">
+              <a href="tel:+15550142">+1 555 0142</a>
+              <a href="mailto:hello@luxestate.example">hello@luxestate.example</a>
+              <span>88 Meridian Avenue, New York</span>
+            </div>
+            <div class="social-links" aria-label="Social links">
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="YouTube">YouTube</a>
+            </div>
+          </div>
+
+          <form class="contact-form glass reveal" data-contact-form>
+            <div class="form-row">
+              <label>
+                Full Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Phone
+                <input type="tel" name="phone" placeholder="Phone number" />
+              </label>
+              <label>
+                Interest
+                <select name="interest" required>
+                  <option value="">Select one</option>
+                  <option>Buying</option>
+                  <option>Selling</option>
+                  <option>Renting</option>
+                  <option>Investment Consulting</option>
+                  <option>Property Management</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell us about your goals, budget, location, and timeline." required></textarea>
+            </label>
+            <button class="btn btn-primary btn-full" type="submit">Send Inquiry</button>
+            <p class="form-note" data-form-note role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="container map-shell reveal" aria-label="Office map preview">
+          <iframe
+            title="Map showing central New York area"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=New%20York%20NY&output=embed">
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true">LE</span>
+            <span>LuxEstate</span>
+          </a>
+          <p>Premium real estate advisory for buyers, sellers, tenants, and investors.</p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <a href="#properties">Properties</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h2>Future-ready</h2>
+          <p>Structured for CMS integration, lead management, analytics, and backend expansion.</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>© <span data-year></span> LuxEstate. All rights reserved.</small>
+        <small>Privacy • Terms • Accessibility</small>
+      </div>
+    </footer>
+
+    <script src="data/properties.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/pwa.js" defer></script>
+  </body>
+</html>
